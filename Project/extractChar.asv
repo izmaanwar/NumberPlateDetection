@@ -1,0 +1,18 @@
+function =extractChar(rect)
+  fig=vertcat(rect);
+  if(rect(3)>20&&rect(4)>30&& rect(3)<500 && rect(4)<200)%rect(3)>20 && rect(3)<500&& rect(4)>50 && rect(4)<200)
+   tempImage= f==q;
+             
+J = imcrop(Newimg,rect) ;
+%figure,imshow(J);
+J = conv2(uint8(J), ones(5)/5^2,'same');
+
+img=imresize(J,[42 24]);
+if(ceil(rect(1))>400)
+year=strcat(year,readLetter(img));      
+else   
+let=strcat(let,readLetter(img));
+end
+  end
+
+end
